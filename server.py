@@ -17,8 +17,8 @@ count = 0
 
 @server.route('/')
 def hello():
+    global count
     count = count + 1 
-#     get_hit_count()
     return "<h1>Page Hit Count {} times. REFRESH MORE!!!</h1>".format(count)
 
 if __name__ == "__main__":
