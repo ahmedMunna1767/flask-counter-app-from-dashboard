@@ -21,7 +21,7 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    return "<h1>Page Hit Count {} times. REFRESH MORE!!!</h1>".format(count)
+    return "<div><h1>Hello Adventurer<h1></div><div><h1>This Page is hit  {} times. REFRESH MORE TO SEE MORE !!! &#9786;&#9786;&#9786;</h1></div><div><footer>This is a Simple Test Running Docker, Flask, Redis On The Cloud for free....</footer></div>".format(count)
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=1337)
